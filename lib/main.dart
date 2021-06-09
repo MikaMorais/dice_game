@@ -1,3 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:dice_game/dice_game.dart';
 
-void main() {}
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Dice Game',
+      home: DiceGame(),
+    );
+  }
+}
